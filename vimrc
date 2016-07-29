@@ -21,6 +21,10 @@ filetype plugin indent on    " required
 set number
 syntax on
 
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
