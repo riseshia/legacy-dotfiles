@@ -25,6 +25,8 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
