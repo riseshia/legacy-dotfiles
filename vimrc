@@ -25,6 +25,9 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+filetype plugin on
+runtime macros/matchit.vim
+
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " To ignore plugin indent changes, instead use:
