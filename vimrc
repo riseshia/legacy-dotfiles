@@ -15,16 +15,20 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-set number
-syntax on
 
+set number
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set hls
+
+syntax enable
+colorscheme monokai
 
 filetype plugin on
 runtime macros/matchit.vim
