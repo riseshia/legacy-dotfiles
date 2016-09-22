@@ -34,6 +34,8 @@ set hls
 syntax enable
 colorscheme monokai
 
+au BufRead,BufNewFile *.es6 set filetype=javascript
+
 filetype plugin on
 runtime macros/matchit.vim
 
