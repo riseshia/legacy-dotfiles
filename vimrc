@@ -16,6 +16,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tomtom/tcomment_vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -23,6 +24,9 @@ filetype plugin indent on    " required
 
 set number
 set expandtab
+set nobackup
+set noswapfile
+set nowritebackup
 set tabstop=2
 set shiftwidth=2
 set hls
