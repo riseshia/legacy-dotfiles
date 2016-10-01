@@ -11,10 +11,11 @@ alias e='elixir'
 alias gs='git status'
 alias gc='git commit'
 alias gaa='git add .'
-alias gf='git diff HEAD'
+alias gdiff='git diff HEAD'
 alias gpush='git push origin'
 alias gpull='git pull origin'
 alias dive='cd ~/Develop/ && cd'
+alias update_brew='brew upgrade && brew update && brew cleanup'
 
 # Retain current working directory when opening a new tab
 # https://github.com/revans/bash-it/issues/240
