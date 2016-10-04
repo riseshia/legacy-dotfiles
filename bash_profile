@@ -7,14 +7,18 @@ unset MAILCHECK
 export SCM_CHECK=true
 
 # alias
-alias e='elixir'
-alias gs='git status'
-alias gc='git commit'
-alias gaa='git add .'
-alias gdiff='git diff HEAD'
-alias gpush='git push origin'
-alias gpull='git pull origin'
+alias be='bundle exec'
 alias dive='cd ~/Develop/ && cd'
+alias e='elixir'
+alias gaa='git add .'
+alias gc='git commit'
+alias gdiff='git diff HEAD'
+alias gn='git checkout -b'
+alias go='git checkout'
+alias gpull='git pull origin'
+alias gpush='git push origin'
+alias gs='git status'
+alias rs='bin/rails server'
 alias update_brew='brew upgrade && brew update && brew cleanup'
 
 # Retain current working directory when opening a new tab
