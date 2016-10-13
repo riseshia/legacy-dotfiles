@@ -18,6 +18,7 @@ alias go='git checkout'
 alias gpull='git pull origin'
 alias gpush='git push origin'
 alias gs='git status'
+alias go='git checkout'
 alias rs='bin/rails server'
 alias update_brew='brew upgrade && brew update && brew cleanup'
 
