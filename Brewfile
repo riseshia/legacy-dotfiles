@@ -17,6 +17,7 @@ brew pkg-config
 brew pyenv
 brew rbenv
 brew readline
+brew redis
 brew ruby-build
 brew vim
 brew yarn
