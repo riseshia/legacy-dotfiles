@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# brewfile
+curl -fsSL https://raw.github.com/rcmdnk/homebrew-file/install/install.sh | sh
+mkdir ~/.brewfile

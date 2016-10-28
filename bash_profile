@@ -3,6 +3,10 @@ eval "$(pyenv init -)"
 
 export EDITOR=vim
 
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
+
 # Path to the bash it configuration
 export BASH_IT="/Users/Shia/.bash_it"
 

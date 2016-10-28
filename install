@@ -4,4 +4,5 @@ ln -sf $PWD/gitignore_global ~/.gitignore_global
 ln -sfn $PWD/vim ~/.vim
 ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/bash_profile ~/.bash_profile
+ln -sf $PWD/Brewfile ~/.brewfile/Brewfile
 
