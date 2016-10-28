@@ -44,3 +44,6 @@ Temporary Items
 # sftp configuration file
 sftp-config.json
 
+vim/bundle
+vim/.netrwhist
+
