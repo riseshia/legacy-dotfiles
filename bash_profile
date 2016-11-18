@@ -35,6 +35,7 @@ export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
 
 # alias
 alias be='bundle exec'
+alias deploy='bundle exec cap production deploy'
 alias dive='cd ~/Develop/ && cd'
 alias e='elixir'
 alias ga='git add'
