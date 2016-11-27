@@ -1,0 +1,14 @@
+brew install autoconf
+brew install ctags
+brew install elixir
+brew install imagemagick
+brew install mysql
+brew install node
+brew install openssl
+brew install readline
+brew install rbenv
+brew install ruby-build
+brew install pyenv
+brew install redis
+brew install vim
+brew install yarn
