@@ -12,3 +12,4 @@ brew install pyenv
 brew install redis
 brew install vim
 brew install yarn
+brew install gnupg2
