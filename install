@@ -5,6 +5,7 @@ ln -sfn $PWD/vim ~/.vim
 ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/bash_profile ~/.bash_profile
 ln -sf $PWD/gemrc ~/.gemrc
+ln -sf $PWD/git-open /usr/local/bin/git-open
 
 # readline problem
 if [ -e ~/.rbenv/plugins/rbenv-readline ]
