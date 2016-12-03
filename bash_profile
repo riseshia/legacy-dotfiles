@@ -23,10 +23,6 @@ export SCM_CHECK=true
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-# Retain current working directory when opening a new tab
-# https://github.com/revans/bash-it/issues/240
-export PROMPT_COMMAND="$PROMPT_COMMAND;update_terminal_cwd;"
-
 export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
 
 # alias
