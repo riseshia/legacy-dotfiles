@@ -13,3 +13,4 @@ brew install redis
 brew install vim
 brew install yarn
 brew install gnupg2
+brew install tmux
