@@ -43,3 +43,5 @@ alias go='git checkout'
 alias rs='bin/rails server'
 alias update_brew='brew upgrade && brew update && brew cleanup'
 
+# brew git
+export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"

@@ -24,3 +24,9 @@ else
   git clone git://github.com/tpope/rbenv-readline.git \
       ~/.rbenv/plugins/rbenv-readline
 fi
+
+# setup git diff-highlight
+git config --global pager.log 'diff-highlight | less'
+git config --global pager.show 'diff-highlight | less'
+git config --global pager.diff 'diff-highlight | less'
+git config --global interactive.diffFilter diff-highlight

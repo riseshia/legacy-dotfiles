@@ -1,4 +1,5 @@
 brew install autoconf
+brew install git
 brew install ctags
 brew install elixir
 brew install imagemagick
