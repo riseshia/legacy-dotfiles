@@ -33,6 +33,7 @@ set nowritebackup
 set tabstop=2
 set shiftwidth=2
 set hls
+set scrolloff=10
 
 syntax enable
 colorscheme monokai
