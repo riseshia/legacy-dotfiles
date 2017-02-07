@@ -23,8 +23,6 @@ export SCM_CHECK=true
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
-
 # alias
 alias be='bundle exec'
 alias deploy='bundle exec cap production deploy'
@@ -46,3 +44,6 @@ alias v='vim'
 
 # brew git
 export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
+
+# maat
+export PATH="/Users/shia/bin/:${PATH}"
