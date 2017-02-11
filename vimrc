@@ -10,16 +10,18 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'honza/vim-snippets'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
+
+" Syntax Highlight
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +42,9 @@ colorscheme monokai
 
 " Treat *.es6 as javascript
 au BufRead,BufNewFile *.es6 set filetype=javascript
+
+" Disable plugin indent support on ts
+let g:typescript_indent_disable = 1
 
 filetype plugin on
 runtime macros/matchit.vim
