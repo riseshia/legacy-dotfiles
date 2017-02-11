@@ -20,6 +20,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
+Plugin 'posva/vim-vue'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mxw/vim-jsx'
 
