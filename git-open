@@ -22,9 +22,9 @@ remote="origin"
 if [ -n "$1" ]; then
   if [ "$1" == "issue" ]; then
     currentBranch=$(git symbolic-ref -q --short HEAD)
-    regex='^i'
+    regex='^i([0-9]+)'
     if [[ $currentBranch =~ $regex ]]; then
-      issue=${currentBranch#*#}
+      issue=${BASH_REMATCH[1]}
     else
       echo "'git open issue' expect branch naming to be i123" 1>&2
       exit 1
