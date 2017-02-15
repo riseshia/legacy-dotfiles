@@ -43,6 +43,8 @@ colorscheme monokai
 
 " Treat *.es6 as javascript
 au BufRead,BufNewFile *.es6 set filetype=javascript
+" Treat *.jb as ruby
+au BufRead,BufNewFile *.jb set filetype=ruby
 
 " Disable plugin indent support on ts
 let g:typescript_indent_disable = 1
