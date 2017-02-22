@@ -40,7 +40,7 @@ alias gpush='git push origin'
 alias gs='git status'
 alias rs='bin/rails server'
 alias update_brew='brew upgrade && brew update && brew cleanup'
-alias v='vim'
+alias v='vim .'
 
 # brew git
 export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
