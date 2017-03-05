@@ -47,3 +47,6 @@ export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
 
 # maat
 export PATH="/Users/shia/bin/:${PATH}"
+
+# yarn
+export PATH="$HOME/.yarn/bin:${PATH}"
