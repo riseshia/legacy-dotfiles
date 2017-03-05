@@ -8,21 +8,22 @@ xcode-select --install
 ./install_vundle
 
 
-ln -sf $PWD/gitignore_global ~/.gitignore_global
-ln -sfn $PWD/vim ~/.vim
-ln -sf $PWD/vimrc ~/.vimrc
-ln -sf $PWD/bash_profile ~/.bash_profile
-ln -sf $PWD/gemrc ~/.gemrc
+ln -sf $PWD/gitignore_global $HOME/.gitignore_global
+ln -sfn $PWD/vim $HOME/.vim
+ln -sf $PWD/vimrc $HOME/.vimrc
+ln -sf $PWD/bash_profile $HOME/.bash_profile
+ln -sf $PWD/gemrc $HOME/.gemrc
 ln -sf $PWD/git-open /usr/local/bin/git-open
-ln -sf $PWD/tmux.conf ~/.tmux.conf
+ln -sf $PWD/tmux.conf $HOME/.tmux.conf
+ln -sf $PWD/bash_functions $HOME/
 
 # readline problem
-if [ -e ~/.rbenv/plugins/rbenv-readline ]
+if [ -e $HOME/.rbenv/plugins/rbenv-readline ]
 then
   echo rbenv-readline is already installed
 else
   git clone git://github.com/tpope/rbenv-readline.git \
-      ~/.rbenv/plugins/rbenv-readline
+      $HOME/.rbenv/plugins/rbenv-readline
 fi
 
 # setup git diff-highlight
