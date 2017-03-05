@@ -15,7 +15,7 @@ ln -sf $PWD/bash_profile $HOME/.bash_profile
 ln -sf $PWD/gemrc $HOME/.gemrc
 ln -sf $PWD/git-open /usr/local/bin/git-open
 ln -sf $PWD/tmux.conf $HOME/.tmux.conf
-ln -sf $PWD/bash_functions $HOME/
+ln -sf $PWD/bash_functions $HOME/.bash_functions
 
 # readline problem
 if [ -e $HOME/.rbenv/plugins/rbenv-readline ]

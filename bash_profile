@@ -38,6 +38,9 @@ alias rs='bin/rails server'
 alias update_brew='brew upgrade && brew update && brew cleanup'
 alias v='vim .'
 
+# custom functions
+export PATH="$HOME/.bash_functions:${PATH}"
+
 # brew git
 export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
 
