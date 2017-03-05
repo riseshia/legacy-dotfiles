@@ -16,10 +16,6 @@ unset MAILCHECK
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
 
-# Set vcprompt executable path for scm advance info in prompt (demula theme)
-# https://github.com/xvzf/vcprompt
-# export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
-
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
@@ -50,3 +46,7 @@ export PATH="/Users/shia/bin/:${PATH}"
 
 # yarn
 export PATH="$HOME/.yarn/bin:${PATH}"
+
+# python
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
