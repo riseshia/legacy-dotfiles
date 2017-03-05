@@ -28,15 +28,11 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
 alias gd='git diff HEAD'
-alias gn='git checkout -b'
-alias go='git checkout'
-alias go='git checkout'
 alias gpull='git pull origin'
 alias gpush='git push origin'
 alias gs='git status'
 alias rs='bin/rails server'
 alias update_brew='brew upgrade && brew update && brew cleanup'
-alias v='vim .'
 
 # custom functions
 export PATH="$HOME/.bash_functions:${PATH}"
