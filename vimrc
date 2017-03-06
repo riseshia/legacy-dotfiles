@@ -15,6 +15,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " Syntax Highlight
 Plugin 'elixir-lang/vim-elixir'
@@ -40,6 +41,13 @@ set scrolloff=10
 
 syntax enable
 colorscheme monokai
+
+" Indent Guides configuration
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=239
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
 " Treat *.es6 as javascript
 au BufRead,BufNewFile *.es6 set filetype=javascript
