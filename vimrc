@@ -16,6 +16,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-syntastic/syntastic'
 
 " Syntax Highlight
 Plugin 'elixir-lang/vim-elixir'
@@ -27,6 +28,7 @@ Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
 filetype plugin indent on    " required
 
 set number
@@ -40,6 +42,7 @@ set hls
 set scrolloff=10
 
 syntax enable
+syntax sync fromstart
 colorscheme monokai
 
 " Indent Guides configuration
@@ -49,6 +52,15 @@ let g:indent_guides_start_level = 2
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=239
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
+" Syntastic configuration
+let g:syntastic_error_symbol = "x"
+let g:syntastic_warning_symbol = ";"
+let g:syntastic_enable_elixir_checker = 1
+let g:syntastic_elixir_checker = ["elixir"]
+let g:syntastic_ruby_checkers = ["rubocop"]
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_scss_checkers = ['scss_lint']
+
 " Treat *.es6 as javascript
 au BufRead,BufNewFile *.es6 set filetype=javascript
 " Treat *.jb as ruby
@@ -57,7 +69,6 @@ au BufRead,BufNewFile *.jb set filetype=ruby
 " Disable plugin indent support on ts
 let g:typescript_indent_disable = 1
 
-filetype plugin on
 runtime macros/matchit.vim
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
