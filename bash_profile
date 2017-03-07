@@ -38,10 +38,10 @@ alias update_brew='brew upgrade && brew update && brew cleanup'
 export PATH="$HOME/.bash_functions:${PATH}"
 
 # brew git
-export PATH="/usr/local/share/git-core/contrib/diff-highlight/:${PATH}"
+export PATH="/usr/local/share/git-core/contrib/diff-highlight:${PATH}"
 
 # maat
-export PATH="/Users/shia/bin/:${PATH}"
+export PATH="/Users/shia/bin:${PATH}"
 
 # yarn
 export PATH="$HOME/.yarn/bin:${PATH}"
