@@ -31,19 +31,24 @@ call vundle#end()            " required
 
 filetype plugin indent on    " required
 
-set number
 set expandtab
+set hls
 set nobackup
 set noswapfile
 set nowritebackup
-set tabstop=2
-set shiftwidth=2
-set hls
+set number
 set scrolloff=10
+set shiftwidth=2
+set autoindent
+set tabstop=2
 
 syntax enable
 syntax sync fromstart
 colorscheme monokai
+
+" Python Indent configuration
+let g:pyindent_open_paren = '&sw'
+let g:pyindent_continue = '&sw'
 
 " Indent Guides configuration
 let g:indent_guides_auto_colors = 0
