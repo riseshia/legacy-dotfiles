@@ -22,7 +22,6 @@ source $BASH_IT/bash_it.sh
 # alias
 alias be='bundle exec'
 alias deploy='bundle exec cap production deploy'
-alias dive='cd ~/Develop/ && cd'
 alias e='elixir'
 alias ga='git add'
 alias gb='git branch'
