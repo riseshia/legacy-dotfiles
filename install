@@ -2,9 +2,9 @@
 
 xcode-select --install
 
-./brewfiles
 ./install_bashit
 ./install_brew
+./brewfiles
 ./install_vundle
 
 
