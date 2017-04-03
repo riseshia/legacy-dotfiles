@@ -9,7 +9,7 @@ xcode-select --install
 
 
 ln -sf $PWD/gitignore_global $HOME/.gitignore_global
-ln -sfn $PWD/vim $HOME/.vim
+ln -sf $PWD/vim $HOME/.vim
 ln -sf $PWD/vimrc $HOME/.vimrc
 ln -sf $PWD/bash_profile $HOME/.bash_profile
 ln -sf $PWD/gemrc $HOME/.gemrc
