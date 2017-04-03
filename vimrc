@@ -59,13 +59,16 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=239
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
 " Syntastic configuration
-let g:syntastic_error_symbol = "x"
-let g:syntastic_warning_symbol = ";"
+let g:syntastic_error_symbol = 'x'
+let g:syntastic_warning_symbol = ';'
 let g:syntastic_enable_elixir_checker = 1
-let g:syntastic_elixir_checker = ["elixir"]
-let g:syntastic_ruby_checkers = ["rubocop"]
-let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_elixir_checker = ['elixir']
+let g:loaded_syntastic_python_pylint_checker = 0
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_mode_map = { 'passive_filetypes': ['vue'] }
 
 " Treat *.es6 as javascript
 au BufRead,BufNewFile *.es6 set filetype=javascript
