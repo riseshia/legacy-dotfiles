@@ -19,6 +19,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-syntastic/syntastic'
 
 " Syntax Highlight
+Plugin 'andreimaxim/vim-io'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
