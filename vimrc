@@ -17,6 +17,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'mattn/emmet-vim'
 
 " Syntax Highlight
 Plugin 'andreimaxim/vim-io'
