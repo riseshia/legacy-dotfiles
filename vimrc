@@ -19,13 +19,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mattn/emmet-vim'
 
 " Syntax Highlight
-Plugin 'andreimaxim/vim-io'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'pangloss/vim-javascript'
-Plugin 'posva/vim-vue'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mxw/vim-jsx'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'jparise/vim-graphql'
 
 " All of your Plugins must be added before the following line
