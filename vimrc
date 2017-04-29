@@ -21,6 +21,7 @@ Plugin 'mattn/emmet-vim'
 " Syntax Highlight
 Plugin 'sheerun/vim-polyglot'
 Plugin 'jparise/vim-graphql'
+Plugin 'elmcast/elm-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,8 +54,10 @@ let g:indent_guides_start_level = 2
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=239
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
-" Treat *.es6 as javascript
-au BufRead,BufNewFile *.es6 set filetype=javascript
+" Elm
+let g:polyglot_disabled = ['elm']
+let g:elm_format_autosave = 1
+
 " Treat *.jb as ruby
 au BufRead,BufNewFile *.jb set filetype=ruby
 
