@@ -47,13 +47,6 @@ colorscheme monokai
 let g:pyindent_open_paren = '&sw'
 let g:pyindent_continue = '&sw'
 
-" Indent Guides configuration
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=239
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
-
 " Elm
 let g:polyglot_disabled = ['elm']
 let g:elm_format_autosave = 1
