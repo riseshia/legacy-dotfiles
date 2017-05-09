@@ -17,6 +17,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mattn/emmet-vim'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Syntax Highlight
 Plugin 'sheerun/vim-polyglot'
