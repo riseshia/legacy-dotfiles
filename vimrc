@@ -16,9 +16,10 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 " Syntax Highlight
 Plugin 'sheerun/vim-polyglot'
