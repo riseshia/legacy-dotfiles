@@ -16,6 +16,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'bronson/vim-trailing-whitespace'
 
@@ -38,6 +39,7 @@ set number
 set scrolloff=10
 set shiftwidth=2
 set autoindent
+set smartindent
 set tabstop=2
 
 syntax enable
@@ -51,6 +53,18 @@ let g:pyindent_continue = '&sw'
 " Elm
 let g:polyglot_disabled = ['elm']
 let g:elm_format_autosave = 1
+
+" Syntastic configuration
+let g:syntastic_error_symbol = 'x'
+let g:syntastic_warning_symbol = ';'
+let g:syntastic_enable_elixir_checker = 1
+let g:syntastic_elixir_checker = ['elixir']
+let g:loaded_syntastic_python_pylint_checker = 0
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_mode_map = { 'passive_filetypes': ['vue'] }
 
 " Treat *.jb as ruby
 au BufRead,BufNewFile *.jb set filetype=ruby
