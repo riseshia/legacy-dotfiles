@@ -57,7 +57,7 @@ let g:elm_format_autosave = 1
 
 " Syntastic configuration
 let g:syntastic_error_symbol = 'x'
-let g:syntastic_warning_symbol = ';'
+let g:syntastic_warning_symbol = '-'
 let g:syntastic_enable_elixir_checker = 1
 let g:syntastic_elixir_checker = ['elixir']
 let g:loaded_syntastic_python_pylint_checker = 0
