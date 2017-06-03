@@ -10,16 +10,17 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'mattn/emmet-vim'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mattn/emmet-vim'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-syntastic/syntastic'
 
 " Syntax Highlight
 Plugin 'sheerun/vim-polyglot'
