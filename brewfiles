@@ -1,3 +1,4 @@
+brew install ag
 brew install autoconf
 brew install ctags
 brew install elixir
