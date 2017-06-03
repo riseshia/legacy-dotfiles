@@ -47,6 +47,24 @@ syntax enable
 syntax sync fromstart
 colorscheme monokai
 
+" Disable output and VCS files
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+
+" Ignore images and log files
+set wildignore+=*.gif,*.jpg,*.png,*.log
+
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+
+" Ignore bundler and sass cache
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+
+" Ignore rails temporary asset caches
+set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
+
+" Disable OS X index files
+set wildignore+=.DS_Store
+
 " Python Indent configuration
 let g:pyindent_open_paren = '&sw'
 let g:pyindent_continue = '&sw'
