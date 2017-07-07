@@ -133,6 +133,9 @@ endif
 
 autocmd QuickFixCmdPost *grep* cwindow
 
+" puts the caller
+nnoremap <leader>wtf oputs "#" * 90<c-m>puts caller<c-m>puts "#" * 90<esc>
+
 " To ignore plugin indent changes, instead use:
 " filetype plugin on
 "
