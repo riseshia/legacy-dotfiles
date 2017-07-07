@@ -108,7 +108,6 @@ if (exists('+colorcolumn'))
 endif
 
 " exclude files listed in .gitignore
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\.git\|node_modules\|bin\|\.hg\|\.svn\|build\|log\|resources\|coverage\|doc\|tmp\|public/assets\|vendor\|Android',
 \ 'file': '\.jpg$\|\.exe$\|\.so$\|tags$\|\.dll$'
