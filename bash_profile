@@ -21,6 +21,7 @@ source $BASH_IT/bash_it.sh
 
 # alias
 alias be='bundle exec'
+alias c='clear'
 alias deploy='bundle exec cap production deploy'
 alias e='elixir'
 alias ga='git add'
