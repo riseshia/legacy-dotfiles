@@ -3,6 +3,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
 call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
@@ -14,12 +15,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'junegunn/fzf.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'mileszs/ack.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
@@ -107,33 +107,28 @@ if (exists('+colorcolumn'))
   highlight ColorColumn ctermbg=9
 endif
 
-" exclude files listed in .gitignore
-let g:ctrlp_custom_ignore = {
-\ 'dir':  '\.git\|node_modules\|bin\|\.hg\|\.svn\|build\|log\|resources\|coverage\|doc\|tmp\|public/assets\|vendor\|Android',
-\ 'file': '\.jpg$\|\.exe$\|\.so$\|tags$\|\.dll$'
-\ }
-
-"" The Silver Searcher
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep --smart-case'
-  cnoreabbrev ag Ack
-  cnoreabbrev aG Ack
-  cnoreabbrev Ag Ack
-  cnoreabbrev AG Ack
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-endif
-
-autocmd QuickFixCmdPost *grep* cwindow
-
 " puts the caller
 nnoremap <leader>wtf oputs "#" * 90<c-m>puts caller<c-m>puts "#" * 90<esc>
+
+" fzf - buffer selection
+function! s:buflist()
+  redir => ls
+  silent ls
+  redir END
+  return split(ls, '\n')
+endfunction
+
+function! s:bufopen(e)
+  execute 'buffer' matchstr(a:e, '^[ 0-9]*')
+endfunction
+
+nnoremap <silent> gg :Ggrep
+nnoremap <silent> <C-p> :call fzf#run({
+\   'source':  reverse(<sid>buflist()),
+\   'sink':    function('<sid>bufopen'),
+\   'options': '+m',
+\   'down':    len(<sid>buflist()) + 2
+\ })<CR>
 
 " To ignore plugin indent changes, instead use:
 " filetype plugin on
