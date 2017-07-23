@@ -122,7 +122,8 @@ function! s:bufopen(e)
   execute 'buffer' matchstr(a:e, '^[ 0-9]*')
 endfunction
 
-nnoremap <silent> gg :Ggrep
+:command -nargs=+ GgrepCw execute 'silent Ggrep' <q-args> | cw | redraw!
+nnoremap <silent> gg :GgrepCw
 nnoremap <silent> <C-p> :call fzf#run({
 \   'source':  reverse(<sid>buflist()),
 \   'sink':    function('<sid>bufopen'),
