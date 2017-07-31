@@ -29,7 +29,6 @@ Plugin 'tpope/vim-unimpaired'
 " Syntax Highlight
 Plugin 'sheerun/vim-polyglot'
 Plugin 'jparise/vim-graphql'
-Plugin 'elmcast/elm-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -73,10 +72,6 @@ set wildignore+=.DS_Store
 " Python Indent configuration
 let g:pyindent_open_paren = '&sw'
 let g:pyindent_continue = '&sw'
-
-" Elm
-let g:polyglot_disabled = ['elm']
-let g:elm_format_autosave = 1
 
 " Treat *.jb as ruby
 au BufRead,BufNewFile *.jb set filetype=ruby
