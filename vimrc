@@ -16,7 +16,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'junegunn/fzf.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tomtom/tcomment_vim'
@@ -103,6 +102,7 @@ function! s:bufopen(e)
   execute 'buffer' matchstr(a:e, '^[ 0-9]*')
 endfunction
 
+" Git grep shortcut
 :command -nargs=+ GgrepCw execute 'silent Ggrep' <q-args> | cw | redraw!
 nnoremap <silent> gg :GgrepCw
 nnoremap <silent> <C-p> :call fzf#run({
