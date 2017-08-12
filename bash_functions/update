@@ -1,0 +1,39 @@
+#!/bin/bash
+
+function update-brew {
+  echo updating brew
+  brew update
+  brew upgrade --all
+  brew cleanup
+}
+
+function update-vim {
+  echo updating vim
+  vim +PluginUpdate +qall
+}
+
+function update-npm {
+  echo updating npm
+  npm-check -u -g
+}
+
+case $1 in
+brew)
+  update-brew
+  ;;
+vim)
+  update-vim
+  ;;
+npm)
+  update-npm
+  ;;
+all)
+  update-brew
+  update-vim
+  update-npm
+  ;;
+*)
+  echo 'update what?'
+  echo 'please select from [brew, vim, npm, all]'
+  ;;
+esac
