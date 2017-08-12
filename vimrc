@@ -23,6 +23,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/tpope-vim-abolish'
+Plugin 'jgdavey/vim-blockle'
 
 " Syntax Highlight
 Plugin 'sheerun/vim-polyglot'
