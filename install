@@ -32,3 +32,6 @@ git config --global pager.log 'diff-highlight | less'
 git config --global pager.show 'diff-highlight | less'
 git config --global pager.diff 'diff-highlight | less'
 git config --global interactive.diffFilter diff-highlight
+
+# replace won to `
+curl -sSL https://gist.githubusercontent.com/redism/43bc51cab62269fa97a220a7bb5e1103/raw/0d55b37b60e0e0bd3d0d7f53995de0a722f9820c/kr_won_to_backquote.sh | sh
