@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+mkdir -p "$(rbenv root)"/plugins
+
+if [ -e $HOME/.rbenv/plugins/rbenv-readline ]
+then
+  echo rbenv-readline is already installed, try to update...
+  cd "$(rbenv root)"/plugins/rbenv-readline
+  git pull origin
+else
+  echo rbenv-readline is installing...
+  git clone git://github.com/tpope/rbenv-readline.git \
+      $HOME/.rbenv/plugins/rbenv-readline
+fi
+
+if [ -e $HOME/.rbenv/plugins/rbenv-each ]
+then
+  echo rbenv-each is already installed, try to update...
+  cd "$(rbenv root)"/plugins/rbenv-each
+  git pull origin
+else
+  echo rbenv-each is installing...
+  git clone https://github.com/rbenv/rbenv-each.git \
+    "$(rbenv root)"/plugins/rbenv-each
+fi

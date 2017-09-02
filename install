@@ -19,13 +19,7 @@ ln -sf $PWD/tmux.conf $HOME/.tmux.conf
 ln -sf $PWD/bash_functions $HOME/.bash_functions
 
 # readline problem
-if [ -e $HOME/.rbenv/plugins/rbenv-readline ]
-then
-  echo rbenv-readline is already installed
-else
-  git clone git://github.com/tpope/rbenv-readline.git \
-      $HOME/.rbenv/plugins/rbenv-readline
-fi
+./install_rbenv_plugin
 
 # setup git diff-highlight
 git config --global pager.log 'diff-highlight | less'
