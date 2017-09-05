@@ -1,0 +1,9 @@
+#!/bin/bash
+if [[ $# -eq 0 ]]; then
+  echo 'Give files'
+else
+  if [ $1 == '.' ]; then
+    echo 'You shall not pass!!!!!!'
+  fi
+  git add $@
+fi
