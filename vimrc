@@ -110,7 +110,7 @@ endfunction
 
 " Git grep shortcut
 :command -nargs=+ GgrepCw execute 'silent Ggrep' <q-args> | cw | redraw!
-nnoremap <silent> gg :GgrepCw
+nnoremap <silent> vv :GgrepCw
 nnoremap <silent> <C-p> :call fzf#run({
 \   'source':  reverse(<sid>buflist()),
 \   'sink':    function('<sid>bufopen'),
