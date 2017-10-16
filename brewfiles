@@ -19,3 +19,4 @@ brew install v8
 brew install vim
 brew install yarn
 brew install bash-completion
+brew install jq
