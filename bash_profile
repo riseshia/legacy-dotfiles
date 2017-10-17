@@ -40,7 +40,7 @@ alias run_pg='pg_ctl -D /usr/local/var/postgres start'
 export PATH="$HOME/.bash_functions:${PATH}"
 
 # brew git
-export PATH="/usr/local/share/git-core/contrib/diff-highlight:${PATH}"
+export PATH="$(brew --prefix)/share/git-core/contrib/diff-highlight:${PATH}"
 
 # maat
 export PATH="/Users/shia/bin:${PATH}"
