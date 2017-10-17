@@ -32,8 +32,6 @@ alias gpull='git pull origin'
 alias gpu='git pull upstream master'
 alias gpush='git push origin'
 alias gs='git status'
-alias rs='bin/rails server'
-alias update_brew='brew upgrade && brew update && brew cleanup'
 alias run_pg='pg_ctl -D /usr/local/var/postgres start'
 
 # custom functions
@@ -41,9 +39,6 @@ export PATH="$HOME/.bash_functions:${PATH}"
 
 # brew git
 export PATH="$(brew --prefix)/share/git-core/contrib/diff-highlight:${PATH}"
-
-# maat
-export PATH="/Users/shia/bin:${PATH}"
 
 # yarn
 export PATH="$HOME/.yarn/bin:${PATH}"
