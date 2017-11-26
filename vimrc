@@ -50,6 +50,7 @@ set shiftwidth=2
 set autoindent
 set smartindent
 set tabstop=2
+set cursorline
 
 syntax enable
 syntax sync fromstart
