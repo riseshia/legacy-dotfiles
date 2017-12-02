@@ -20,6 +20,9 @@ brew install vim
 brew install yarn
 brew install bash-completion
 brew install jq
+brew install shellcheck
+brew install z
+
 # Qmk
 brew tap osx-cross/avr
 brew tap PX4/homebrew-px4
