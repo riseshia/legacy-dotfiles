@@ -31,6 +31,7 @@ alias gg='git grep'
 alias gpull='git pull origin'
 alias gpu='git pull upstream master'
 alias gpush='git push origin'
+alias gpp='gpu && gpush'
 alias gs='git status'
 alias run_pg='pg_ctl -D /usr/local/var/postgres start'
 
