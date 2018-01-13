@@ -44,6 +44,9 @@ export PATH="$(brew --prefix)/share/git-core/contrib/diff-highlight:${PATH}"
 # yarn
 export PATH="$HOME/.yarn/bin:${PATH}"
 
+# tab autocompletion with cycle style
+bind TAB:menu-complete
+
 # python
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
