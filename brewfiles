@@ -22,6 +22,7 @@ brew install bash-completion
 brew install jq
 brew install shellcheck
 brew install z
+brew install envchain
 
 # Qmk
 brew tap osx-cross/avr
