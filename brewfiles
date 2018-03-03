@@ -1,4 +1,3 @@
-brew install ag
 brew install autoconf
 brew install ctags
 brew install elixir
@@ -24,11 +23,3 @@ brew install shellcheck
 brew install z
 brew install envchain
 brew install reattach-to-user-namespace
-
-# Qmk
-brew tap osx-cross/avr
-brew tap PX4/homebrew-px4
-brew update
-brew install avr-gcc
-brew install dfu-programmer
-brew install gcc-arm-none-eab
