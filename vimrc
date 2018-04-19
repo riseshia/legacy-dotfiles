@@ -25,6 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/tpope-vim-abolish'
 Plugin 'jgdavey/vim-blockle'
+Plugin 'google/vim-jsonnet'
 
 " Snippet
 Plugin 'SirVer/ultisnips'
