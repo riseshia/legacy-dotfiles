@@ -110,6 +110,8 @@ function! s:bufopen(e)
   execute 'buffer' matchstr(a:e, '^[ 0-9]*')
 endfunction
 
+:command EE Explore
+
 " Git grep shortcut
 :command -nargs=+ GgrepCw execute 'silent Ggrep' <q-args> | cw | redraw!
 nnoremap <silent> vv :GgrepCw
