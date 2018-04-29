@@ -26,6 +26,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/tpope-vim-abolish'
 Plugin 'jgdavey/vim-blockle'
 Plugin 'google/vim-jsonnet'
+Plugin 'hashivim/vim-terraform'
 
 " Snippet
 Plugin 'SirVer/ultisnips'
@@ -84,6 +85,9 @@ au BufRead,BufNewFile *.jb set filetype=ruby
 
 " Disable plugin indent support on ts
 let g:typescript_indent_disable = 1
+
+" vim-terraform
+let g:terraform_align=1
 
 runtime macros/matchit.vim
 
